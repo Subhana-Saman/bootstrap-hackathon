@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary pb-3">
+          <div class="container-fluid ">
+              <img src="./assets/image/Logo.png" class="navbar-brand ">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav custom ">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Desitnations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Hotels</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Flights</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Bookings</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Login</a>
+                        </li>
+                        <li> <button>Sign up</button></li>
+                        <select name="" id="">
+                        <option style="text-decoration: none;">EN</option></select>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <section class="hero-section">
+        <div class="hero-content" >
+            <div class="head1">
+      <p  class="tag">Best Destinations around the world</p>
+      <h1 class="headline"> Travel,
+        <span class="underline-word"> enjoy</span>
+        and live a new
+        and full life</h1>
+        <p class="description">  Built Wicket longer admire do barton vanity itself do in it. Preferred to sportsmen it engrossed listening. Park gate sell they west hard for the.</p>
+        <div class="buttons">
+            <a href="#" class="btn btn-circle">▶</a>
+       <button> Find out more</button>
+ </div> <div class="buttons">
+        <a href="#" class="btn btn-primary">Find out more</a>
+        <button class="btn btn-circle"></button>
+        <span class="demo-text">Play Demo</span>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="hero-image.png" alt="Traveler" />
+    </div>
+       
+<div class="head2">
+    <img src="./assets/image/Traveller 1.png" style="height: 600px;">
+
+</div>
+</div>
+
+    
+<!-- <section class="hero-section">
+    <div class="hero-content">
+      <p class="tagline">Best Destinations Around The World</p>
+      <h1 class="headline">
+        Travel,
+        <span class="underline-word">enjoy</span>
+        and live a new<br />
+        and full life
+      </h1>
+      <p class="description">
+        Built Wicket longer admire do barton vanity itself do in it. Preferred to
+        sportsmen it engrossed listening. Park gate sell they west hard for the.
+      </p>
+      <div class="buttons">
+        <a href="#" class="btn btn-primary">Find out more</a>
+        <button class="btn btn-circle">▶</button>
+        <span class="demo-text">Play Demo</span>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="hero-image.png" alt="Traveler" />
+    </div>
+  <!-- </section> -->
+  /* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff;
+  color: #1f1f2e;
+}
+
+.hero-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 2rem;
+}
+
+.hero-content {
+  max-width: 600px;
+  flex: 1;
+}
+
+.tagline {
+  color: #ff7f50;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.headline {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.2;
+  color: #1e1e4a;
+  margin-bottom: 1rem;
+}
+
+.underline-word {
+  position: relative;
+  display: inline-block;
+  color: #1e1e4a;
+}
+
+.underline-word::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0.2em;
+  width: 100%;
+  height: 8px;
+  background-color: #ff7f50;
+  z-index: -1;
+}
+
+.description {
+  color: #666;
+  font-size: 1rem;
+  margin: 1.5rem 0;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 50px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background-color: #fcb900;
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: background 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #e0a800;
+}
+
+.btn-circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #ff7f50;
+  color: white;
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.demo-text {
+  font-weight: 500;
+  color: #444;
+}
+
+.hero-image {
+  flex: 1;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+} -->
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+  </body>
+</html>
