@@ -1,0 +1,140 @@
+.logo{
+  margin-left: 100px;
+}
+.head{
+display: flex;
+gap: 45px;
+
+}
+h1{
+  font-family: serif;
+}
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 0;
+}
+.hero-text h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.2;
+
+}
+
+.hero-image img {
+  max-height: 500px;
+  width: auto;
+}
+.custom-card img{
+ width: 70px;
+ margin: auto;
+}
+.custom-card .card{
+  width: 200px;
+  border:none ;
+
+}
+.custom-card .card-body{
+  text-align: center;
+}
+
+.destinate{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 80px;
+}
+.destinate img{
+  width: 100%;
+  height:230px ;
+  object-fit:cover ;
+  border-radius: 25px;
+
+}
+.destinate .card{
+
+  background-color: rgb(255, 255, 255);
+  border-radius:20px ;
+  border: none;
+  box-shadow: 3px 3px rgb(240, 239, 239);
+
+}
+.main{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  flex-wrap: wrap;
+  gap: 16px;
+  overflow-x: hidden;
+ 
+
+
+
+}
+.part1{
+  width: 500px;
+  margin-left: 80px;
+}
+.part2{
+  width: 500px;
+  margin-right:20px ;
+
+}
+.main-two{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+
+}
+.all-image{
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+gap: 85px;
+}
+.all-image img{
+  width: 105px;
+}
+.login{
+  width: 800px;
+  max-width: 90%;
+  margin: auto;
+  text-align: center;
+  padding: 60px ;
+  border-radius: 40px;
+  background-color: rgb(243, 241, 241);
+
+}
+input{
+  padding: 7px;
+  width: 300px;
+  max-width: 100%;
+  border-radius: 10px;
+  border: transparent;
+}
+.login button{
+  padding: 7px;
+  width: 130px;
+  max-width: 100%;
+  border-radius: 10px;
+  background-image: linear-gradient(rgb(255, 148, 109,80),rgb(255, 125, 104,100));
+  border: transparent;
+  color: white;
+}
+@media (max-width: 768px) {
+  .login {
+    padding: 30px;
+  }
+
+  input,
+  .login button {
+    display: block;
+    width: 100%;
+    margin: 10px auto;
+  
+  }
+}
